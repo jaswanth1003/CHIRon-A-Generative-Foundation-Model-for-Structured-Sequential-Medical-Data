@@ -36,3 +36,25 @@ The work is inspired by the CHIRon paper presented at the NeurIPS 2023 Generativ
 ```bash
 git clone https://github.com/your-username/chiron-foundation-model.git
 cd chiron-foundation-model
+
+### 2. Install Required Packages
+pip install -r requirements.txt
+
+### 3. Prepare the Dataset
+Place the Synthea-generated structured datasets (patients.csv, conditions.csv, medications.csv, etc.) into a /data directory inside the project.
+
+Ensure the datasets are cleaned and formatted properly for preprocessing.
+
+### 4. Preprocess the Data
+python preprocess_data.py
+
+### 5. Train the Model
+python train_model.py
+
+### 6. Generate Sequences
+python generate_sequences.py
+
+### 7. Evaluate the Model
+python evaluate_model.py
+
+
